@@ -1,0 +1,67 @@
+/****************************************
+* Password policy
+****************************************/
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-policy {
+  position: absolute;
+  top: calc(100% - .5rem);
+  left: 0;
+  z-index: 1;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.password-policy.bottom-align {
+  top: auto;
+  bottom: 58px;
+}
+
+.password-policy .title {
+  margin-bottom: .5rem;
+  font-weight: 700;
+}
+
+.password-policy .req {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.password-policy .req + .req {
+  margin-top: .5rem;
+}
+
+.password-policy .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c02d00;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.password-policy .checkbox svg {
+  width: 10px;
+  height: 10px;
+  fill: #c02d00;
+}
+
+.password-policy .checkbox.on {
+  border-color: #00c066;
+}
+
+.password-policy .checkbox.on svg {
+  fill: #00c066;
+}
+
+.password-policy p {
+  margin: 0;
+  white-space: nowrap;
+}
